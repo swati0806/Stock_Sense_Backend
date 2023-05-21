@@ -14,7 +14,7 @@ import path from "path";
 dotenv.config({path: "./config/config.env"})
 const app = express();
 
-const port = 2020;
+const port = process.env.PORT||2020;
  
 connectDB();
 
